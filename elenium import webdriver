@@ -1,0 +1,62 @@
+warning: LF will be replaced by CRLF in functional_tests.py.
+The file will have its original line endings in your working directory.
+[1mdiff --git a/functional_tests.py b/functional_tests.py[m
+[1mindex 441c2ed..5a73a9c 100644[m
+[1m--- a/functional_tests.py[m
+[1m+++ b/functional_tests.py[m
+[36m@@ -1,33 +1,29 @@[m
+ from selenium import webdriver[m
+[32m+[m[32mimport unittest[m
+ [m
+[31m-browser = webdriver.Firefox()[m
+[32m+[m[32mclass NewVisitorTest(unittest.TestCase):[m[41m  [m
+ [m
+[31m-# Edith has heard about a cool new online to-do app. She goes[m
+[31m-# to check out its homepage[m
+[31m-browser.get('http://localhost:8000')[m
+[32m+[m[32m    # Arrange[m
+[32m+[m[32m    def setUp(self):[m[41m  [m
+[32m+[m[32m        self.browser = webdriver.Firefox()[m
+ [m
+[31m-# She notices the page title and header mention to-do lists[m
+[31m-assert 'To-Do' in browser.title[m
+[32m+[m[32m    def tearDown(self):[m[41m  [m
+[32m+[m[32m        self.browser.quit()[m
+ [m
+[31m-# She is invited to enter a to-do item straight away[m
+[32m+[m[32m    def test_can_start_a_list_and_retrieve_it_later(self):[m[41m  [m
+ [m
+[31m-# She types "Buy peacock feathers" into a text box (Edith's hobby[m
+[31m-# is tying fly-fishing lures)[m
+[32m+[m[32m        # Act[m
+[32m+[m[32m        # Edith has heard about a cool new online to-do app. She goes[m
+[32m+[m[32m        # to check out its homepage[m
+[32m+[m[32m        self.browser.get('http://localhost:8000')[m
+ [m
+[31m-# When she hits enter, the page updates, and now the page lists[m
+[31m-# "1: Buy peacock feathers" as an item in a to-do list[m
+[32m+[m[32m        #Assert[m
+[32m+[m[32m        # She notices the page title and header mention to-do lists[m
+[32m+[m[32m        self.assertIn('To-Do', self.browser.title)[m[41m  [m
+[32m+[m[32m        self.fail('Finish the test!')[m[41m  [m
+ [m
+[31m-# There is still a text box inviting her to add another item. She[m
+[31m-# enters "Use peacock feathers to make a fly" (Edith is very methodical)[m
+[32m+[m[32m        # She is invited to enter a to-do item straight away[m
+[32m+[m[32m        #[...rest of comments as before][m
+ [m
+[31m-# The page updates again, and now shows both items on her list[m
+[31m-[m
+[31m-# Edith wonders whether the site will remember her list. Then she sees[m
+[31m-# that the site has generated a unique URL for her -- there is some[m
+[31m-# explanatory text to that effect.[m
+[31m-[m
+[31m-# She visits that URL - her to-do list is still there.[m
+[31m-[m
+[31m-# Satisfied, she goes back to sleep[m
+[31m-[m
+[31m-browser.quit()[m
+\ No newline at end of file[m
+[32m+[m[32mif __name__ == '__main__':[m[41m  [m
+[32m+[m[32m    unittest.main(warnings='ignore')[m[41m  [m
+\ No newline at end of file[m
