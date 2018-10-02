@@ -609,3 +609,153 @@ console.error: PushService:
 [GPU 316, Chrome
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1538442155319	geckodriver	INFO	geckodriver 0.21.0
+1538442155329	geckodriver	INFO	Listening on 127.0.0.1:64494
+1538442158341	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.MGNCMjwlPTBJ"
+1538442164567	Marionette	INFO	Listening on port 64502
+1538442165029	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538442167478	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
+onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:170
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757
+observe()@resource://gre/modules/addons/XPIProvider.jsm:1672
+GeckoDriver.prototype.quit()@driver.js:3282
+despatch()@server.js:294
+execute()@server.js:268
+onPacket/<()@server.js:243
+onPacket()@server.js:242
+_onJSONObjectReady/<()@transport.js:500
+[Parent 25368, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9388, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9388, Ch*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1538442589118	geckodriver	INFO	geckodriver 0.21.0
+1538442589127	geckodriver	INFO	Listening on 127.0.0.1:64598
+1538442592135	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.zIMhEm7aKluV"
+1538442596501	Marionette	INFO	Listening on port 64606
+1538442596632	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538442599897	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
+onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:170
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757
+observe()@resource://gre/modules/addons/XPIProvider.jsm:1672
+GeckoDriver.prototype.quit()@driver.js:3282
+despatch()@server.js:294
+execute()@server.js:268
+onPacket/<()@server.js:243
+onPacket()@server.js:242
+_onJSONObjectReady/<()@transport.js:500
+[Child 7268, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7268, Chro[Child 25360, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 25360, ChromeJavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  AbortError
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  AbortError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  AbortError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 15584
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1538443693586	geckodriver	INFO	geckodriver 0.21.0
+1538443693595	geckodriver	INFO	Listening on 127.0.0.1:64881
+1538443696597	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.jc4IVgnCXkhq"
+1538443701538	Marionette	INFO	Listening on port 64889
+1538443702039	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538443705115	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
+onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:170
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757
+observe()@resource://gre/modules/addons/XPIProvider.jsm:1672
+GeckoDriver.prototype.quit()@driver.js:3282
+despatch()@server.js:294
+execute()@server.js:268
+onPacket/<()@server.js:243
+onPacket()@server.js:242
+_onJSONObjectReady/<()@transport.js:500
+[Parent 10656, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15920[Parent 10656, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10656, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 7000, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1538443764233	geckodriver	INFO	geckodriver 0.21.0
+1538443764243	geckodriver	INFO	Listening on 127.0.0.1:64930
+1538443767249	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.cKGZbmyyU8ok"
+1538443771866	Marionette	INFO	Listening on port 64938
+1538443772361	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538443774628	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493
+onAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:51
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:29
+uninit()@resource://activity-stream/lib/Store.jsm:170
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:318
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757
+observe()@resource://gre/modules/addons/XPIProvider.jsm:1672
+GeckoDriver.prototype.quit()@driver.js:3282
+despatch()@server.js:294
+execute()@server.js:268
+onPacket/<()@server.js:243
+onPacket()@server.js:242
+_onJSONObjectReady/<()@transport.js:500
+[Child 26324, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 26324, ChJavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 26564, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
