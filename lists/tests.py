@@ -12,6 +12,15 @@ class HomePageTest(TestCase):
         response = self.client.get('/')
         self.assertTemplateUsed(response, 'home.html')
 
+    def test_displays_all_list_items(self):
+        Item.objects.create(text='itemey 1')
+        Item.objects.create(text='itemey 2')
+
+        response = self.client.get('/')
+
+        self.assertIn('itemey 1', response.content.decode())
+        self.assertIn('itemey 2', response.content.decode())
+
     def test_can_save_a_POST_request(self):
         self.client.post('/', data={'item_text': 'A new list item'})
 
@@ -22,31 +31,26 @@ class HomePageTest(TestCase):
     def test_redirects_after_POST(self):
         response = self.client.post('/', data={'item_text': 'A new list item'})
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(response['location'], '/')
+        self.assertEqual(response['location'], '/lists/the-only-list-in-the-world/')
 
     def test_only_saves_items_when_necessary(self):
         self.client.get('/')
         self.assertEqual(Item.objects.count(), 0)
 
-    def test_home_page_returns_correct_html(self):
-        response = self.client.get('/')  
+class ListViewTest(TestCase):
 
-        html = response.content.decode('utf8')  
-        self.assertTrue(html.startswith('<html>'))
-        self.assertIn('<title>To-Do lists</title>', html)
-        self.assertTrue(html.strip().endswith('</html>'))
+    def test_uses_list_template(self):
+        response = self.client.get('/lists/the-only-list-in-the-world/')
+        self.assertTemplateUsed(response, 'list.html')
 
-        self.assertTemplateUsed(response, 'home.html')
-
-    def test_displays_all_list_items(self):
+    def test_displays_all_items(self):
         Item.objects.create(text='itemey 1')
         Item.objects.create(text='itemey 2')
 
-        response = self.client.get('/')
+        response = self.client.get('/lists/the-only-list-in-the-world/')
 
-        self.assertIn('itemey 1', response.content.decode())
-        self.assertIn('itemey 2', response.content.decode())
-
+        self.assertContains(response, 'itemey 1')  
+        self.assertContains(response, 'itemey 2')  
 
 class ItemModelTest(TestCase):
 
