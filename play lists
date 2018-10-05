@@ -1,0 +1,202 @@
+warning: LF will be replaced by CRLF in geckodriver.log.
+The file will have its original line endings in your working directory
+[1mdiff --git a/geckodriver.log b/geckodriver.log[m
+[1mindex 17074ed..c508424 100644[m
+[1m--- a/geckodriver.log[m
+[1m+++ b/geckodriver.log[m
+[36m@@ -1329,3 +1329,136 @@[m [mconsole.error: PushService:[m
+ [GPU 987[m
+ ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv[m
+ [m
+[32m+[m[32m1538707212852	geckodriver	INFO	geckodriver 0.21.0[m
+[32m+[m[32m1538707212861	geckodriver	INFO	Listening on 127.0.0.1:52051[m
+[32m+[m[32m1538707215861	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.Z94IsoFEsk4M"[m
+[32m+[m[32m1538707221260	Marionette	INFO	Listening on port 52061[m
+[32m+[m[32m1538707221439	Marionette	WARN	TLS certificate errors will be ignored for this session[m
+[32m+[m[32m1538707225676	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493[m
+[32m+[m[32monAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451[m
+[32m+[m[32m_middleware/</<()@resource://activity-stream/lib/Store.jsm:51[m
+[32m+[m[32mStore/this[method]()@resource://activity-stream/lib/Store.jsm:29[m
+[32m+[m[32muninit()@resource://activity-stream/lib/Store.jsm:170[m
+[32m+[m[32muninit()@resource://activity-stream/lib/ActivityStream.jsm:318[m
+[32m+[m[32muninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79[m
+[32m+[m[32mshutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187[m
+[32m+[m[32mcallBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757[m
+[32m+[m[32mobserve()@resource://gre/modules/addons/XPIProvider.jsm:1672[m
+[32m+[m[32mGeckoDriver.prototype.quit()@driver.js:3282[m
+[32m+[m[32mdespatch()@server.js:294[m
+[32m+[m[32mexecute()@server.js:268[m
+[32m+[m[32monPacket/<()@server.js:243[m
+[32m+[m[32monPacket()@server.js:242[m
+[32m+[m[32m_onJSONObjectReady/<()@transport.js:500[m
+[32m+[m[32m[Parent 13584, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 18364, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 18364, Chrome[Parent 13584, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 9284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 9284, Chrom[Parent 13584, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 17272, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 17272, ChrJavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.[m
+[32m+[m[32mJavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.[m
+[32m+[m[32mJavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.[m
+[32m+[m
+[32m+[m[32m###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value[m
+[32m+[m
+[32m+[m
+[32m+[m[32m###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value[m
+[32m+[m
+[32m+[m[32m*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping[m
+[32m+[m[32m[GPU 5828,[m
+[32m+[m[32m###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv[m
+[32m+[m
+[32m+[m[32m1538707232765	geckodriver	INFO	geckodriver 0.21.0[m
+[32m+[m[32m1538707232774	geckodriver	INFO	Listening on 127.0.0.1:52088[m
+[32m+[m[32m1538707235776	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.J0oNkgOqNu1p"[m
+[32m+[m[32m1538707242213	Marionette	INFO	Listening on port 52096[m
+[32m+[m[32m1538707242320	Marionette	WARN	TLS certificate errors will be ignored for this session[m
+[32m+[m[32m1538707244225	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493[m
+[32m+[m[32monAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451[m
+[32m+[m[32m_middleware/</<()@resource://activity-stream/lib/Store.jsm:51[m
+[32m+[m[32mStore/this[method]()@resource://activity-stream/lib/Store.jsm:29[m
+[32m+[m[32muninit()@resource://activity-stream/lib/Store.jsm:170[m
+[32m+[m[32muninit()@resource://activity-stream/lib/ActivityStream.jsm:318[m
+[32m+[m[32muninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79[m
+[32m+[m[32mshutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187[m
+[32m+[m[32mcallBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757[m
+[32m+[m[32mobserve()@resource://gre/modules/addons/XPIProvider.jsm:1672[m
+[32m+[m[32mGeckoDriver.prototype.quit()@driver.js:3282[m
+[32m+[m[32mdespatch()@server.js:294[m
+[32m+[m[32mexecute()@server.js:268[m
+[32m+[m[32monPacket/<()@server.js:243[m
+[32m+[m[32monPacket()@server.js:242[m
+[32m+[m[32m_onJSONObjectReady/<()@transport.js:500[m
+[32m+[m[32m[Parent 5416, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 15964, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 15964, C[Parent 5416, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32mJavaScript error: resource://gre/modules/Sqlite.jsm, line 841: Error: Connection is not open.[m
+[32m+[m[32mJavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.[m
+[32m+[m[32mconsole.error: PushService:[m[41m [m
+[32m+[m[32m  clearOriginData: Error clearing origin data:[m
+[32m+[m[32m  UnknownError[m
+[32m+[m[32mconsole.error: PushService:[m[41m [m
+[32m+[m[32m  clearOriginData: Error clearing origin data:[m
+[32m+[m[32m  UnknownError[m
+[32m+[m[32mconsole.error: PushService:[m[41m [m
+[32m+[m[32m  stateChangeProcessEnqueue: Error transitioning state[m
+[32m+[m[32m  UnknownError[m
+[32m+[m
+[32m+[m[32m###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value[m
+[32m+[m
+[32m+[m
+[32m+[m[32m###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value[m
+[32m+[m
+[32m+[m[32m*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping[m
+[32m+[m[32m[GPU 17384[m
+[32m+[m[32m###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv[m
+[32m+[m
+[32m+[m[32m1538707250303	geckodriver	INFO	geckodriver 0.21.0[m
+[32m+[m[32m1538707250312	geckodriver	INFO	Listening on 127.0.0.1:52128[m
+[32m+[m[32m1538707253313	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\there\\AppData\\Local\\Temp\\rust_mozprofile.GY5qO4sLcGPL"[m
+[32m+[m[32m1538707258245	Marionette	INFO	Listening on port 52136[m
+[32m+[m[32m1538707258732	Marionette	WARN	TLS certificate errors will be ignored for this session[m
+[32m+[m[32m1538707259137	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/TelemetryFeed.jsm :: uninit :: line 493"  data: no] Stack trace: uninit()@resource://activity-stream/lib/TelemetryFeed.jsm:493[m
+[32m+[m[32monAction()@resource://activity-stream/lib/TelemetryFeed.jsm:451[m
+[32m+[m[32m_middleware/</<()@resource://activity-stream/lib/Store.jsm:51[m
+[32m+[m[32mStore/this[method]()@resource://activity-stream/lib/Store.jsm:29[m
+[32m+[m[32muninit()@resource://activity-stream/lib/Store.jsm:170[m
+[32m+[m[32muninit()@resource://activity-stream/lib/ActivityStream.jsm:318[m
+[32m+[m[32muninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:79[m
+[32m+[m[32mshutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:187[m
+[32m+[m[32mcallBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:2757[m
+[32m+[m[32mobserve()@resource://gre/modules/addons/XPIProvider.jsm:1672[m
+[32m+[m[32mGeckoDriver.prototype.quit()@driver.js:3282[m
+[32m+[m[32mdespatch()@server.js:294[m
+[32m+[m[32mexecute()@server.js:268[m
+[32m+[m[32monPacket/<()@server.js:243[m
+[32m+[m[32monPacket()@server.js:242[m
+[32m+[m[32m_onJSONObjectReady/<()@transport.js:500[m
+[32m+[m[32m[Parent 9168, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 7984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 7984, Chr[Parent 9168, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 188[m
+[32m+[m[32m[Parent 9168, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 9028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 9028, Chrome_[Parent 9168, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 8768, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346[m
+[32m+[m[32m[Child 8768, ChromeJavaScript error: resource://gre/modules/JSONFile.jsm, line 159: Error: Data is not ready.[m
+[32m+[m[32mconsole.error: PushService:[m[41m [m
+[32m+[m[32m  clearOriginData: Error clearing origin data:[m
+[32m+[m[32m  UnknownError[m
+[32m+[m[32mconsole.error: PushService:[m[41m [m
+[32m+[m[32m  clearOriginData: Error clearing origin data:[m
+[32m+[m[32m  UnknownError[m
+[32m+[m[32mconsole.error: PushService:[m[41m [m
+[32m+[m[32m  stateChangeProcessEnqueue: Error transitioning state[m
+[32m+[m[32m  UnknownError[m
+[32m+[m
+[32m+[m[32m###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value[m
+[32m+[m
+[32m+[m
+[32m+[m[32m###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value[m
+[32m+[m
+[32m+[m[32m*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping[m
+[32m+[m[32m[GPU 1640[m
+[32m+[m[32m###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv[m
+[32m+[m
+[1mdiff --git a/lists/__pycache__/tests.cpython-36.pyc b/lists/__pycache__/tests.cpython-36.pyc[m
+[1mindex 8d92b87..deed614 100644[m
+Binary files a/lists/__pycache__/tests.cpython-36.pyc and b/lists/__pycache__/tests.cpython-36.pyc differ
+[1mdiff --git a/lists/__pycache__/views.cpython-36.pyc b/lists/__pycache__/views.cpython-36.pyc[m
+[1mindex 8519013..b7b3fd1 100644[m
+Binary files a/lists/__pycache__/views.cpython-36.pyc and b/lists/__pycache__/views.cpython-36.pyc differ
+[1mdiff --git a/lists/templates/home.html b/lists/templates/home.html[m
+[1mindex 74a3e59..c318984 100644[m
+[1m--- a/lists/templates/home.html[m
+[1m+++ b/lists/templates/home.html[m
+[36m@@ -3,16 +3,10 @@[m
+         <title>To-Do lists</title>[m
+     </head>[m
+     <body>[m
+[31m-        <h1>Your To-Do list</h1>[m
+[31m-        <form method="POST">[m
+[31m-            <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />[m
+[31m-            {% csrf_token %}[m
+[31m-        </form>[m
+[31m-[m
+[31m-        <table id="id_list_table">[m
+[31m-                {% for item in items %}[m
+[31m-                    <tr><td>{{ forloop.counter }}: {{ item.text }}</td></tr>[m
+[31m-                {% endfor %}[m
+[31m-        </table>[m
+[32m+[m[32m    <h1>Start a new To-Do list</h1>[m
+[32m+[m[32m    <form method="POST">[m
+[32m+[m[32m        <input name="item_text" id="id_new_item" placeholder="Enter a to-do item" />[m
+[32m+[m[32m        {% csrf_token %}[m
+[32m+[m[32m    </form>[m
+     </body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/lists/tests.py b/lists/tests.py[m
+[1mindex 31b78aa..41d4053 100644[m
+[1m--- a/lists/tests.py[m
+[1m+++ b/lists/tests.py[m
+[36m@@ -12,6 +12,15 @@[m [mclass HomePageTest(TestCase):[m
+         response = self.client.get('/')[m
+         self.assertTemplateUsed(response, 'home.html')[m
+ [m
+[32m+[m[32m    def test_displays_all_list_items(self):[m
+[32m+[m[32m        Item.objects.create(text='itemey 1')[m
+[32m+[m[32m        Item.objects.create(text='itemey 2')[m
+[32m+[m
+[32m+[m[32m        response = self.client.get('/')[m
+[32m+[m
+[32m+[m[32m        self.assertIn('itemey 1', response.content.decode())[m
+[32m+[m[32m        self.assertIn('itemey 2', response.content.decode())[m
+[32m+[m
+     def test_can_save_a_POST_request(self):[m
+         self.client.post('/', data={'item_text': 'A new list item'})[m
+ [m
+[36m@@ -22,31 +31,26 @@[m [mclass HomePageTest(TestCase):[m
+     def test_redirects_after_POST(self):[m
+         response = self.client.post('/', data={'item_text': 'A new list item'})[m
+         self.assertEqual(response.status_code, 302)[m
+[31m-        self.assertEqual(response['location'], '/')[m
+[32m+[m[32m        self.assertEqual(response['location'], '/lists/the-only-list-in-the-wor
